@@ -1,0 +1,173 @@
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+/* Note: Makes sure that padding and the border are included in the width for each element. */
+/* Don't add anything else under the * selector! */
+@import url('https://fonts.googleapis.com/css?family=Lato%7CRaleway:600');
+* {
+	box-sizing: border-box;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0 auto;
+	color: #44545E;
+}
+p {
+	text-transform: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+
+}
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+header h1, header h2 {
+	color: white;
+}
+h1 {
+	font-size: 37px;
+}
+h2 {
+	font-size: 23px;
+}
+h3 {
+	font-size: 18px;
+}
+p {
+	font-size: 15px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+}
+aside {
+	background-color: #b3f0ff;
+}
+/* ----------------------------------------
+Lists
+------------------------------------------- */
+
+
+
+/* ----------------------------------------
+Layout
+------------------------------------------- */
+h2 {
+	padding-top: 110px;
+	padding-bottom: 55px;
+}
+section h3 {
+	margin-top: 20px;
+}
+div {
+	display: flex;
+	background-size: contain;
+	background-repeat: no-repeat;
+	justify-content: center;
+}
+.pics section {
+	width: 400px;
+	margin: 0 15px;
+}
+.pics section img {
+	margin-bottom: 10px;
+}
+section p {
+	padding: 10px 80px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+aside {
+	padding-bottom: 110px;
+	padding-left: 32%;
+	padding-right: 32%;
+	margin-top: 110px;
+}
+aside h2{
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+aside h3 {
+	padding-bottom: 40px;
+}
+aside p{
+	margin-bottom: 20px;
+}
+#visual_guide {
+	margin-bottom: 55px;
+}
+/* ----------------------------------------
+Header
+------------------------------------------- */
+header {
+	background-image: url("../images/home_header_bg.jpg");
+	padding: 470px 10px;
+	background-size: cover;
+	background-position: top;
+}
+h1 {
+	letter-spacing: 20px;
+}
+nav a{
+	color: #7B98AA;
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+	width: 66%;
+	padding: 15px 0;
+}
+/* ----------------------------------------
+Buttons
+------------------------------------------- */
+section a {
+	border: 2px solid black;
+	padding: 10px 30px;
+}
+
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+footer {
+	background-color: #b3f0ff;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+}
+footer a {
+	font-size: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+input {
+	padding: 5px 70px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	border: none;
+}
+footer div {
+	margin-bottom: 30px;
+}
+.subscribe {
+	font-size: 15px;
+	border: 2px solid black;
+	padding: 5px 25px;
+}
+hr {
+	border: 1px solid black;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+footer h4 {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: capitalize;
+}
