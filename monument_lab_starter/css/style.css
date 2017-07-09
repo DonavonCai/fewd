@@ -127,8 +127,19 @@ section a {
 	border: 2px solid black;
 	padding: 10px 30px;
 }
-
-
+nav a:hover {
+	color: black;
+	transition: 1s;
+}
+i:hover {
+	color: purple;
+	transition: 1s;
+}
+.subscribe:hover {
+	background-color: #0099ff;
+	color: black;
+	transition: 1s;
+}
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
@@ -139,6 +150,7 @@ footer {
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
 	font-size: 15px;
+	margin-top: 60px;
 }
 footer a {
 	font-size: 40px;
