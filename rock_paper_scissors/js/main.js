@@ -2,6 +2,7 @@
 // Create a variable computerScore. Give it a value of the number 0.
 var humanScore = 0;
 var computerScore = 0;
+
 // Create a function play. It should accept two parameters: humanPlay and computerPlay.
 // Inside the function:
   // Log "You played {humanPlay}. The bot played {computerPlay}" to the console.
@@ -18,12 +19,12 @@ function play(humanPlay, computerPlay) {
     // Add one to the humanScore variable (be sure to use += )
   // Otherwise log "You lose! :(" to the console
     // Add one to the computerScore variable (be sure to use += )
-    if (humanPlay == computerPlay) {
+    if (humanPlay === computerPlay) {
       console.log("You tied.");
     }
-    else if (humanPlay == 'paper' && computerPlay == 'rock' ||
-           humanPlay == 'rock' && computerPlay == 'scissors' ||
-           humanPlay == 'scissors' && computerPlay =='paper') {
+    else if (humanPlay === 'paper' && computerPlay === 'rock' ||
+           humanPlay === 'rock' && computerPlay === 'scissors' ||
+           humanPlay === 'scissors' && computerPlay === 'paper') {
       console.log("You win! :)");
       humanScore += 1;
     }
@@ -41,6 +42,7 @@ function play(humanPlay, computerPlay) {
   console.log("The bot has " + computerScore + " points");
   console.log('=======================');
 }
+
 // After defining the function, call the function 5 - 6 times,
 // Providing a different play for the computer and human each time.
 // Hint: You'll need to use two arguments
@@ -55,9 +57,9 @@ function play(humanPlay, computerPlay) {
 // BONUS:
 // Create a "best of 3" version
 function bestOf3 () {
-  play();
-  play();
-  play();
+  play('rock');
+  play('paper');
+  play('scissors');
 }
 // bestOf3();
 
@@ -75,8 +77,19 @@ function randomPlay(humanPlay) {
      computerPlay = 'scissors';
    }
    console.log("Computer played " + computerPlay + ".");
-   play(humanPlay);
+   console.log("You played " + humanPlay + ".");
+   if (humanPlay === computerPlay) {
+     console.log("You tied.");
+   }
+   else if (humanPlay === 'paper' && computerPlay === 'rock' ||
+          humanPlay === 'rock' && computerPlay === 'scissors' ||
+          humanPlay === 'scissors' && computerPlay === 'paper') {
+     console.log("You win! :)");
+     humanScore += 1;
+   }
+   else {
+     console.log("You lose! :(");
+     computerScore +=1;
+   }
 }
-randomPlay('rock');
-randomPlay('paper');
 randomPlay('scissors');
