@@ -20,6 +20,9 @@ $('#party-time').on('click', function() {
   $('#box3 span').addClass('fun');
   $('h2').slideUp(300);
   $('#row3 div').addClass('selected');
+//BONUS
+  $('.add-para').append('<p>Time to party!!!</p>');
+  $('#box12').prepend('<h4>Wild!</h4>')
 });
 
 
@@ -50,4 +53,7 @@ $('#reset').on('click', function() {
   $('#box3 span').removeClass('fun');
   $('#row3 div').removeClass('selected');
   $('h2').slideDown(300);
+//BONUS
+$('.add-para p').remove();
+$('#box12 h4').remove();
 });
