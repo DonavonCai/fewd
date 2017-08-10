@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Application Form</title>
+
+  <!-- Fonts have already been added here! -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class='form'>
+    <div class='form-section'>
+      <h1>Your Contact Info</h1>
+      <label for='name'>Full Name</label>
+      <input type='text' id='name' placeholder='Enter your name'>
+      <br>
+      <label for='email'>Email</label>
+      <input type='text' id='email' placeholder='Enter your email'>
+      <br>
+      <label for='phone-number'>Phone Number</label>
+      <input type='text' id='phone-number' placeholder='Enter your phone number'>
+    </div>
+    <div class='form-section'>
+      <h1>Skills and Interests</h1>
+      <label for='courses'>What course are you interested in?</label>
+      <select id='courses'>
+        <option>Front End Web Development</option>
+        <option>Back Eng Web Development</option>
+        <option>User Experience</option>
+        <option>JavaScript Development</option>
+        <option>Data Science</option>
+      </select>
+      <h2>Where do you want to take this course?</h2>
+      <div class='radio'>
+      San Francisco<input type='radio' name='location' value='San Francisco' checked>
+      Chicago<input type='radio' name='location' value='Chicago'>
+    </div>
+      <label for="past-experience">Past Experience</label>
+      <textarea placeholder='What is your past experience?' id='past-experience'></textarea>
+    </div>
+    <div class='element-left-justify'>
+      <label for='email-updates'>I want to recieve email updates.</label>
+      <input type='checkbox' id='email-updates' class='element-left-justify'>
+    </div>
+    <div class='element-left-justify'>
+    <button>Submit Application</button>
+  </div>
+  </div>
+
+
+
+</body>
+</html>
